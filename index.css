@@ -1,0 +1,254 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+.wrapper {
+    padding: 1em;
+    
+    justify-content:right;
+}
+
+
+
+.lego{width: 50px;
+    height: 90px;
+    
+}
+
+
+img {
+    width: 50%;
+    position:absolute;
+
+    
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ nav ul {
+     display: flex;
+     margin-top: 1em;
+ }
+ 
+ nav li {
+     margin-right: .5em;
+ }
+ 
+ nav li a {
+     color: black;
+     font-weight: bold;
+     padding: .3em .7em;
+     background-color: rgb(237, 233, 227);
+     border-radius: 1em;
+ }
+ 
+ .hero-left {
+     text-align: center;
+     display: flex;
+ }
+ 
+ h1 {
+     font-size: 2.5em;
+     width: 80%;
+     margin: 1.5em auto 0;
+     color: rgb(36, 115, 155);
+ }
+ 
+ .hero-left p {
+     font-size: 1.2em;
+     width: 80%;
+     margin: 1em auto;
+ }
+ 
+ a.cta-btn {
+     color: white;
+     background: hsl(35, 72%, 50%);
+     padding: .8em 1.5em;
+     border-radius: 2em;
+     font-weight: bold;
+     margin: 1em 0 3em;
+     display: inline-block;
+ }
+ 
+ ul.testimonials {
+     margin-top: 3em;
+ }
+ 
+ ul.testimonials li {
+     background: rgb(194, 191, 181);
+     padding: 2em;
+     margin-bottom: 1em;
+     text-align: center;
+     box-shadow: 10px 10px 18px 5px rgba(5, 189, 173, 0.861);
+ }
+ 
+
+ 
+ footer {
+     font-weight: bold;
+     display:block;
+     margin-top: 1em;
+ }
+ blockquote p {
+     line-height: 1.4em;
+ }
+ 
+ @media (min-width: 390px) {
+     header {
+         display: flex;
+         justify-content: space-between;
+     }
+     nav ul {
+         margin-top: .2em;
+     }
+     nav ul li:nth-of-type(3) {
+         margin-right: 0;
+     }
+ 
+ 
+@media (min-width: 600px) {
+     
+     ul.testimonials {
+         display: grid;
+         grid-template-columns: repeat(2,auto);
+         grid-template-rows: repeat(2,auto);
+         grid-gap: 2em;
+         font-size: 1.3em;
+     }
+     ul.testimonials li {
+         margin: 0;
+     }
+     
+     ul.testimonials li:nth-of-type(3) {
+         grid-area: 2 / 1 / 2 / 3;
+     }
+     
+     
+     
+ 
+ 
+ @media (min-width: 850px) {
+     
+     .wrapper {
+         padding: 1em;
+         margin: 1em;
+        
+        
+         
+     }
+     
+ 
+ 
+  @media (min-width: 1000px) {
+     
+     .hero-left {
+         text-align: left;
+         width: 50%;
+         margin-left: 4em;
+         justify-content: center;
+         
+     }
+     
+     h1, .hero-left p {
+         width: 100%;
+     }
+     
+     .lego{
+         top:0;
+         left: 0;
+         width: 20%;
+         clip-path: none;
+         
+     }
+
+     
+     .moon{
+        width: 300px;
+        height: 300px;
+        
+        opacity:60%;
+        clip-path: none;
+        right:0;
+        
+
+     }
+
+     nav ul li a {
+         background:bisque;
+     }
+     h1 {
+         font-size: 3rem;
+     }
+     ul.testimonials {
+         display: flex;
+     }
+     ul.testimonials  li {
+         margin-right: 1em;
+     }
+     
+     .container {
+        display: grid;
+        width: 100%;
+        margin: 2em auto 0;
+    }
+    .card {
+        background: #337590;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        align-items: center;
+        border-radius: 1em;
+        margin-bottom: 2em;
+    }
+    p, h3 {
+        margin: 0;
+    }
+    h3 {
+        margin-left: 1em;
+        margin-top: .5em
+    }
+    span {
+        width: 5em;
+        height: 5em;
+        background: #75A2B8;
+        border-radius: 50%;
+    }
+    
+
+    
+    .container {
+        width: 90%;
+    }
+    
+    .card {
+        background: #2C3031;
+        padding: 1.5em;
+    }
+    
+    p.date {
+        text-transform: uppercase;
+        font-size: .75em;
+        letter-spacing: .1em;
+        color: #7A8587;
+        margin-bottom: .4em;
+    }
+    
+    h3 {
+        margin: 0 0 .3em;
+        color: #B6EAFF;
+        font-size: 1.8em;
+    }
